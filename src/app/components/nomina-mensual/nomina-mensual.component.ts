@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Personal } from '../../models/personal';
 
 @Component({
   selector: 'nomina-mensual',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: './nomina-mensual.component.html',
 })
 export class NominaMensualComponent {
+  @Input() nomina!:Personal
+
 
 }

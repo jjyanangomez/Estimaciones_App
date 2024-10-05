@@ -1,5 +1,6 @@
 import { Customer } from "../models/customer";
 import { Estimacion } from "../models/estimacion";
+import { Personal } from "../models/personal";
 
 export const estimacionData:Estimacion = {
     customer:{
@@ -72,7 +73,8 @@ export const estimacionData:Estimacion = {
             cantidad:1,
             porcentaje:25,
             sueldoRecibir:585.17
-        }
+        },
+   
     ]
 
 }
