@@ -1,20 +1,27 @@
-<div>
-    <div>
-        <h2>Estimacion proyecto</h2>
-        <div>
-            <h2>Clientes</h2>
-            <ul>
-                <li>Nombre del cliente: {{estimacion.customer.name}}</li>
-            </ul>
-            
+<div class="container">
+    <div class="card my-5">
+        <div class="card-header">
+            <h2>Estimación proyecto</h2>
         </div>
-    </div>
-    <div>
-        
-        <div>
-            Requerimeintos
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <h2>Clientes</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Nombre del cliente: {{estimacion.customer.name}}</li>
+                        <li class="list-group-item">Dirección del cliente: {{estimacion.customer.direccion}}</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Requerimientos</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Tiempo de duración: {{estimacion.customer.requerimeinto.tiempo}}</li>
+                        <li class="list-group-item">Detalle: {{estimacion.customer.requerimeinto.detalle}}</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+    
     <roles></roles>
     <div>
         <div>
@@ -27,4 +34,14 @@
             <nomina-mensual></nomina-mensual>
         </div>
     </div>
+    <div>
+        <costos-adicionales></costos-adicionales>
+        Costo total
+        Precio de venta
+        valor unidad e
+    </div>
+    <div>
+        <nomina-mensual></nomina-mensual>
+    </div>
+</div>
 </div>
