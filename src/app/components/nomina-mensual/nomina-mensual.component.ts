@@ -8,7 +8,7 @@ import { Personal } from '../../models/personal';
   templateUrl: './nomina-mensual.component.html',
 })
 export class NominaMensualComponent {
-  @Input() nomina!:Personal
+  @Input() nomina!:Personal[]
 
 
 }

@@ -1,5 +1,23 @@
-<p>Rol: {{nomina.rol}}</p>
-<p>salario: {{nomina.salario}}</p>
-<p>Cantidad: {{nomina.cantidad}}</p>
-<p>Porcentaje: {{nomina.porcentaje}}</p>
-<p>SueldoRecibir: {{nomina.sueldoRecibir}}</p>
+
+<table class="table table-striped">
+    <thead>
+        <th >ROL</th>
+        <th>SALARIO</th>
+        <th> PORCENTAJE</th>
+        <th>SUELDO RECIBIR </th>
+    </thead>
+    <tbody>
+        @for (item of nomina; track $index) {
+            <tr>
+                <td>{{item.rol}}</td>
+                <td> {{item.salario}}</td>
+                <td>{{item.cantidad}}</td>
+                <td>{{item.porcentaje}}</td>
+                <td>SUELDO RECIBIR: {{item.sueldoRecibir}}</td>
+                
+            </tr>
+        }
+        
+    </tbody>
+</table>
+
