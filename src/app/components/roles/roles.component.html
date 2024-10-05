@@ -1,1 +1,23 @@
-<p>roles works!</p>
+<table class="table table-striped ">
+    <thead>
+        <th>Roles considerados</th>
+        <th>Sueldo</th>
+        <th>Participacion</th>
+    </thead>
+    <tbody>
+        @for (rol of roles; track $index) {
+            <tr>
+                <td>
+                    {{rol.rol}}
+                </td>
+                <td>
+                   $ {{rol.salario}}
+                </td>
+                <td>
+                    {{rol.porcentaje}}%
+                </td>
+            </tr>
+        }
+     
+    </tbody>
+</table>

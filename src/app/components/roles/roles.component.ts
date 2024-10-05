@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Personal } from '../../models/personal';
 
 @Component({
   selector: 'roles',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   templateUrl: './roles.component.html',
 })
 export class RolesComponent {
-
+  @Input() roles!:Personal[];
 }
