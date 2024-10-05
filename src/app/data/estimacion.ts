@@ -48,7 +48,7 @@ export const estimacionData:Estimacion = {
         },
         {
             rol:'Lider',
-            salario:2340.69,
+            salario:600,
             cantidad:1,
             porcentaje:100,
             sueldoRecibir:2340.69
