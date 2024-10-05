@@ -4,11 +4,12 @@ import { CostosAdicionalesComponent } from "../costos-adicionales/costos-adicion
 import { NominaMensualComponent } from "../nomina-mensual/nomina-mensual.component";
 import { EstimacionService } from '../../services/estimacion.service';
 import { Estimacion } from '../../models/estimacion';
+import { CustomerViewComponent } from '../customer-view/customer-view.component';
 
 @Component({
   selector: 'estimacion',
   standalone: true,
-  imports: [RolesComponent, CostosAdicionalesComponent, NominaMensualComponent],
+  imports: [RolesComponent, CostosAdicionalesComponent, NominaMensualComponent, CustomerViewComponent],
   templateUrl: './estimacion.component.html',
 })
 export class EstimacionComponent implements OnInit {
