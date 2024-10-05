@@ -1,1 +1,31 @@
-<p>costos-adicionales works!</p>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-light">
+            <h5 class="mb-0">Costos Adicionales</h5>
+        </div>
+        <div class="card-body">
+            <ul class="list-unstyled">
+                @for (item of estimacion.costosAdicionales; track $index) {
+                    <li>{{item.nombre}}: ${{item.valor}} </li>
+                }
+            </ul>
+        </div>
+        <table class="table table-bordered table-striped mt-4">
+            <tbody>
+                <tr>
+                    <th>Costo Total</th>
+                    <td>$ {{estimacion.costoTotal}}</td>
+                </tr>
+                <tr>
+                    <th>Precio de venta final</th>
+                    <td>$ {{estimacion.precioVenta}}</td>
+                </tr>
+                <tr>
+                    <th>Valor Utilidad</th>
+                    <td>$ {{estimacion.utilidad}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
