@@ -3,39 +3,75 @@ import { Estimacion } from "../models/estimacion";
 
 export const estimacionData:Estimacion = {
     customer:{
-        name:'Juan',
-    requerimeinto:{
-        
+        name:'ACME',
+        requerimeinto:{
         tiempo:3,
-        detalle:'Desarrollar una app',
+        detalle:'Desarrollar una applicacion utilizando Angular para calcular el costo total de un proyecto',
     },
     direccion:{
-        city :'Loja',
-        principalStreet :'Calle 1',
-        secondaryStreet:'Calle 2',
-        code:'23-56'
+        city :'Quito',
+        principalStreet :'Av. Gracia Moreno',
+        secondaryStreet:'Av. Vicente Maldonado',
+        code:'N5-07'
     }
 
     },
-    costohora: 4.64,
-    manoObra:2.63,
+ 
     costosAdicionales:[
         {
-            nombre:'Computador',
-            valor :45,
+            nombre:'Internet',
+            valor :135,
+           
+        },
+        {
+            nombre:'Oficina',
+            valor :1350,
+           
+        },
+        {
+            nombre:'Equipos',
+            valor :1200,
            
         }
     ],
-    precioVenta:8.53,
-    utilidad:10,
-    costoTotal:52,
+    precioVenta:21252.45,
+    utilidad:6800.79,
+    costoTotal:14451.67,
     roles:[
         {
             rol:'Gerente',
-            salario:352.5,
+            salario:600,
+            cantidad:1,
+            porcentaje:20,
+            sueldoRecibir:468.13
+        },
+        {
+            rol:'Lider',
+            salario:2340.69,
+            cantidad:1,
+            porcentaje:100,
+            sueldoRecibir:2340.69
+        },
+        {
+            rol:'Desarrolladores',
+            salario:500,
             cantidad:4,
-            porcentaje:15,
-            sueldoRecibir:45
+            porcentaje:100,
+            sueldoRecibir:7880.16
+        },
+        {
+            rol:'Tester',
+            salario:500,
+            cantidad:1,
+            porcentaje:25,
+            sueldoRecibir:492.51
+        },
+        {
+            rol:'Infraestructura',
+            salario:600,
+            cantidad:1,
+            porcentaje:25,
+            sueldoRecibir:585.17
         }
     ]
 

@@ -6,8 +6,6 @@ export class Estimacion {
     customer!:Customer
     roles!:Personal[]
     costosAdicionales!:Recursos[];
-    costohora!: number;
-    manoObra!:number;
   
     costoTotal!:number;
     precioVenta!:number;
