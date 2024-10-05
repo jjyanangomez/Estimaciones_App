@@ -6,6 +6,10 @@
         <div class="card-body">
             <customer-view [customer]="estimacion.customer"></customer-view>
         </div>
+
+        <div class="container">
+            <roles [roles]="estimacion.roles"></roles>
+        </div>
     <div>
         <div>
             <costos-adicionales [estimacion]="estimacion"></costos-adicionales>
