@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Estimacion } from '../../models/estimacion';
 
 @Component({
   selector: 'costos-adicionales',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   templateUrl: './costos-adicionales.component.html',
 })
 export class CostosAdicionalesComponent {
-
+  @Input()estimacion!:Estimacion;
 }
