@@ -2,22 +2,22 @@
 <table class="table table-striped">
     <thead>
         <th >ROL</th>
-        <th>SALARIO</th>
-        <th> PORCENTAJE</th>
+       
         <th>SUELDO RECIBIR </th>
     </thead>
     <tbody>
         @for (item of nomina; track $index) {
             <tr>
                 <td>{{item.rol}}</td>
-                <td> {{item.salario}}</td>
-                <td>{{item.cantidad}}</td>
-                <td>{{item.porcentaje}}</td>
-                <td>SUELDO RECIBIR: {{item.sueldoRecibir}}</td>
+                
+                <td>$ {{item.sueldoRecibir}}</td>
                 
             </tr>
         }
-        
+        <tr>
+            <td><strong>TOTAL:</strong></td>
+            <td>$11766,67</td>
+        </tr>
     </tbody>
 </table>
 
