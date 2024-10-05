@@ -10,11 +10,12 @@
         <div class="container">
             <roles [roles]="estimacion.roles"></roles>
         </div>
-    <div>
-        <div>
+    <div class="row">
+        <div class="col">
             <costos-adicionales [estimacion]="estimacion"></costos-adicionales>
         </div>
-        <div>
+        <br>
+        <div class="col">
             <nomina-mensual [nomina]="estimacion.roles"></nomina-mensual>
         </div>
     </div>

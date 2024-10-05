@@ -1,23 +1,25 @@
 
-<table class="table table-striped">
-    <thead>
-        <th >ROL</th>
-       
-        <th>SUELDO RECIBIR </th>
-    </thead>
-    <tbody>
-        @for (item of nomina; track $index) {
+<div class="container mt-5">
+    <table class="table table-striped">
+        <thead>
+            <th >ROL</th>
+           
+            <th>SUELDO RECIBIR </th>
+        </thead>
+        <tbody>
+            @for (item of nomina; track $index) {
+                <tr>
+                    <td>{{item.rol}}</td>
+                    
+                    <td>$ {{item.sueldoRecibir}}</td>
+                    
+                </tr>
+            }
             <tr>
-                <td>{{item.rol}}</td>
-                
-                <td>$ {{item.sueldoRecibir}}</td>
-                
+                <td><strong>TOTAL:</strong></td>
+                <td>$11766,67</td>
             </tr>
-        }
-        <tr>
-            <td><strong>TOTAL:</strong></td>
-            <td>$11766,67</td>
-        </tr>
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>
 
